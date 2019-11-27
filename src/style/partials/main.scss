@@ -1,0 +1,54 @@
+$font1: "Gotham Pro", sans-serif;
+$font2: "Nexa Replica RU", sans-serif;
+
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: $font1;
+	margin: 0;
+	font-size: 1vw;
+}
+
+*:focus{
+	outline: none;
+}
+
+.count-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.dot{
+		width: 7px;
+		height: 7px;
+		border: 2px solid rgba(0, 0, 0, 0.5);
+		box-sizing: border-box;
+		display: block;
+		border-radius: 100%;
+		+.dot{
+			margin-left: 33px;
+		}
+		&.active{
+			background: #000000;
+		}
+	}
+}
+
+.btn{
+	background: #DC0021;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	cursor: pointer;
+	font-family: $font2;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0 auto;
+	&:hover{
+		background: #9e001f;
+	}
+}
