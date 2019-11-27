@@ -17,9 +17,140 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+*:focus{
+	outline: none;
+}
+
 b, strong{
-	font-weight: 700;
+	font-weight: 600;
 }
 i,em{
 	font-style: italic;
+}
+
+a{
+	text-decoration: none;
+	color: #101010;
+	border-bottom: 1px solid rgba(166, 23, 68, 0.5);
+	transition: 0.15s;
+}
+a:hover {
+	color: #A61744;
+	border-bottom-color: #A61744;
+	text-decoration: none;
+}
+
+
+h1, .h1 {
+	font-weight: 600;
+	font-size: 30px;
+	margin-bottom: 1rem;
+}
+
+h2, .h2 {
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 1rem;
+	margin-top: 2.5rem;
+}
+
+h3, .h3 {
+	font-weight: 600;
+	font-size: 22px;
+	margin-bottom: .5rem;
+	margin-top: 2.5rem;
+}
+
+h4, .h4 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: .5rem;
+	margin-top: 2.5rem;
+}
+
+h5, .h5 {
+	font-weight: 600;
+	font-size: 17px;
+	margin-bottom: .5rem;
+	margin-top: 1.5rem;
+}
+
+h6, .h6 {
+	font-weight: 600;
+	font-size: 17px;
+	margin-bottom: .5rem;
+}
+
+@media (min-width: 768px) {
+	h1, .h1 {
+		font-size: 44px;
+	}
+	h2, .h2 {
+		font-size: 38px;
+	}
+	h3, .h3 {
+		font-size: 30px;
+	}
+	h4, .h4 {
+		font-size: 22px;
+	}
+	h5, .h5 {
+		font-size: 20px;
+	}
+}
+
+
+
+.ul {
+	list-style: none;
+	padding-left: 18px;
+}
+
+.ul > li {
+	position: relative;
+}
+
+.ul > li::before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: #A61744;
+	position: absolute;
+	top: 10px;
+	left: -16px;
+}
+
+.ul > li::after {
+	content: '';
+	width: 4px;
+	height: 4px;
+	background: #AAAAAA;
+	position: absolute;
+	top: 14px;
+	left: -12px;
+}
+
+.ol {
+	list-style: none;
+	padding-left: 1.5rem;
+	counter-reset: list-numeric;
+	position: relative;
+}
+
+.ol > li::before {
+	counter-increment: list-numeric;
+	content: counter(list-numeric) ". ";
+	font-weight: 600;
+	position: absolute;
+	left: 0;
+}
+
+li + li {
+	margin-top: .5rem;
+}
+
+label {
+	font-weight: 600;
+	margin-bottom: .25rem;
 }

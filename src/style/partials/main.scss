@@ -1,54 +1,39 @@
-$font1: "Gotham Pro", sans-serif;
-$font2: "Nexa Replica RU", sans-serif;
+$font1: "Montserrat", sans-serif;
+$color1: #101010;
+$color2: #D0AE85;
+$color3: #A61744;
 
-a{
-	text-decoration: none;
+
+html {
+	font-size: 20px;
 }
 
-body{
+body {
 	font-family: $font1;
 	margin: 0;
-	font-size: 1vw;
+	font-weight: 300;
+	color: $color1;
 }
 
-*:focus{
-	outline: none;
-}
-
-.count-dots{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	.dot{
-		width: 7px;
-		height: 7px;
-		border: 2px solid rgba(0, 0, 0, 0.5);
-		box-sizing: border-box;
-		display: block;
-		border-radius: 100%;
-		+.dot{
-			margin-left: 33px;
-		}
-		&.active{
-			background: #000000;
-		}
+@media (min-width: 1200px) {
+	.container{
+		max-width: 1680px;
+		padding: 0 45px;
 	}
 }
 
-.btn{
-	background: #DC0021;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: none;
-	cursor: pointer;
-	font-family: $font2;
-	font-style: normal;
-	font-weight: bold;
-	text-align: center;
-	color: #FFFFFF;
-	margin: 0 auto;
-	&:hover{
-		background: #9e001f;
-	}
+.dark-section{
+	background: #303030;
+}
+.gray-section{
+	background: #303030;
+}
+.red-section{
+	background: radial-gradient(119.11% 121.88% at 86.25% 18.44%, rgba(203, 35, 35, 0.74) 0%, rgba(170, 65, 65, 0) 100%), #A61744;
+}
+.color-white{
+	color: #ffffff;
+}
+.color-yellow{
+	color: #ffffff;
 }
