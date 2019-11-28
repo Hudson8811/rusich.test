@@ -5,6 +5,7 @@
 //= libs/jquery.ui.touch-punch.min.js
 //= libs/jquery.fancybox.min.js
 //= libs/slick.min.js
+//= libs/fileinput.min.js
 
 
 

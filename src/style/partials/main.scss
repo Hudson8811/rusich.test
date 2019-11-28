@@ -243,7 +243,61 @@ body {
 	display: none;
 	padding: 28px;
 	max-width: 445px;
+	.input-block{
+		textarea{
+			height: 150px;
+		}
+	}
+	.fancybox-close-small{
+		background: url("../img/close.svg") center center no-repeat;
+		svg{
+			display: none;
+		}
+	}
 }
+.files-zone{
+	.add-file{
+		position: relative;
+		line-height: 22px;
+		transition: color 0.15s;
+		cursor: pointer;
+		.add-file_icon{
+			width: 22px;
+			height: 22px;
+			display: inline-block;
+			background: url("../img/add.svg") center center no-repeat;
+			background-size: 100% 100%;
+			margin-right: 6px;
+			font-size: 18px;
+			vertical-align: middle;
+		}
+		span{
+			border-bottom: 1px dashed rgba(166, 23, 68, 0.5);
+			transition: 0.3s ease;
+		}
+		input{
+			display: none;
+		}
+		&:hover{
+			span{
+				border-color: $color3
+			}
+		}
+	}
+}
+.dropzone{
+	padding: 2rem 1rem;
+	color: #C4C4C4;
+	border: 1px dashed #AAAAAA;
+	box-sizing: border-box;
+}
+.dropzone_info{
+	color: #C4C4C4;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+}
+
 
 .bg-cover{
 	background-size: cover;

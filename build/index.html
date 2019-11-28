@@ -406,20 +406,34 @@
 <div class="modal-form" id="konsul">
 	<div class="h4 modal-title mb-4">Записаться на консультацию</div>
 	<form action="/" class="form-style">
-		<div class="input-block mb-4">
+		<div class="input-block mb-3">
 			<input type="text" name="name" class="form-control" placeholder="Имя" required>
 		</div>
-		<div class="input-block mb-4">
+		<div class="input-block mb-3">
 			<input type="email" name="email" class="form-control" placeholder="Email" required>
 		</div>
-		<div class="input-block mb-4">
+		<div class="input-block mb-3">
 			<input type="text" name="phone" class="form-control" placeholder="Телефон" required>
 		</div>
-		<div class="input-block mb-4">
+		<div class="input-block mb-3">
 			<textarea name="text"  class="form-control" placeholder="Сообщение..." required></textarea>
 		</div>
 		<div class="mb-2"><label class="radio"><input type="radio" name="radio" value="1"><span>Совершеннолетний</span></label></div>
-		<div class="mb-4"><label class="radio"><input type="radio" name="radio" value="2"><span>Несовершеннолетний</span></label></div>
+		<div class="mb-3"><label class="radio"><input type="radio" name="radio" value="2"><span>Несовершеннолетний</span></label></div>
+
+		<div class="h5 mb-2">Добавить документ</div>
+		<div class="files-zone mb-3">
+			<div class="dropzone">
+				<div class="dropzone_info">Перетащите файлы сюда …<br>(Или щёлкните, чтобы выбрать файлы)</div>
+			</div>
+			<div class="add-file mt-2 d-inline-block">
+				<i class="add-file_icon"></i>
+				<span>Добавить файл</span>
+				<input name="files[]" type="file" multiple>
+			</div>
+		</div>
+
+
 		<div class="mb-4"><label class="checkbox"><input type="checkbox" name="checkbox[]" value="1" required><span>Нажимая «Отправить», я даю согласие на обработку персональных данных</span></label></div>
 		<div><button type="submit" class="btn" name="submit">Отправить</button></div>
 	</form>
