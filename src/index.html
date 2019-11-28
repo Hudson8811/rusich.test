@@ -73,7 +73,7 @@
 			<div class="address mt-4">г. Котельники, микрорайон «Южный», ул. Угрешская, напротив дома №6.</div>
 			<div class="address-link mt-3">
 				<i class="icon-loc align-middle mr-2"></i>
-				<a href="">Посмотреть на карте</a>
+				<a href="#map-section" class="scroll-link">Посмотреть на карте</a>
 			</div>
 			<div class="info-blocks row mt-5">
 				<div class="col-md-6 col-lg-4 mb-5">
@@ -252,7 +252,7 @@
 		</div>
 	</section>
 
-	<section class="dark-section map-section d-none d-lg-block">
+	<section class="dark-section map-section d-none d-lg-block" id="map-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-3">
@@ -281,7 +281,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-9"></div>
+				<div class="col-9">
+					<div id="map">
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -399,7 +403,7 @@
 	</div>
 </footer>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

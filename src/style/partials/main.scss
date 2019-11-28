@@ -74,8 +74,13 @@ body {
 }
 
 .address-link{
-	.icon{
-		font-size: 22px;
+	.icon-loc{
+		width: 19px;
+		height: 24px;
+		display: inline-block;
+		background: url(../img/loc.svg) center center no-repeat;
+		background-size: contain;
+		vertical-align: middle;
 	}
 }
 
@@ -379,6 +384,8 @@ body {
 	background-image: url("../img/bg_map.svg");
 	background-position: 5% bottom;
 	background-repeat: no-repeat;
+	position: relative;
+	z-index: 2;
 	.address{
 		+.address{
 			margin-top: 70px;
@@ -393,6 +400,28 @@ body {
 			}
 		}
 	}
+}
+#map{
+	width: 100%;
+	height: 640px;
+	margin-bottom: -67px;
+	position: relative;
+	z-index: 1;
+}
+ymaps[class$='i-custom-scroll'] {
+	padding: 0 !important;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+ymaps[class$='balloon__content'] {
+	padding: 1rem 0 1rem 1rem;
+	font: inherit !important;
+	>ymaps{
+		max-width: 300px;
+		height: auto !important;
+	}
+}
+ymaps[class$='balloon__tail'] {
+	display: none !important;
 }
 
 .places-section{
