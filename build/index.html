@@ -8,17 +8,17 @@
 	<title>title</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
-	<div class="container">
-		<div class="d-flex align-items-center justify-content-between">
+	<div class="container h100">
+		<div class="d-flex align-items-center justify-content-between h100">
 			<div class="logo-block d-flex align-items-center">
 				<a href="" class="d-block"><img src="img/logo.svg" alt=""></a>
-				<div class="site-name ml-3 d-none d-md-block">
+				<div class="site-name ml-4 d-none d-md-block">
 					<span>Девелопмент</span>, <span>проектирование</span>,<br><span>строительство</span>, <span>эксплуатация</span>
 				</div>
 			</div>
@@ -27,8 +27,8 @@
 				<li>
 					<a href="">О компании</a>
 				</li>
-				<li>
-					<a href="" class="active">Проекты</a>
+				<li class="active">
+					<a href="">Проекты</a>
 				</li>
 				<li>
 					<a href="">Контакты</a>
@@ -53,10 +53,10 @@
 </header>
 
 <main class="main">
-	<section>
-		<div class="top-slider" style="background-image: url(img/slider.jpg);">
-			<div class="container">
-				<div class="top-slider-logo">
+	<section class="top-slider">
+		<div class="top-slider__bg h100" style="background-image: url(img/slider.jpg);">
+			<div class="container h100">
+				<div class="top-slider-logo h100 d-flex align-items-end pb-4">
 					<img src="img/slider_logo.png" alt="">
 				</div>
 			</div>
@@ -66,21 +66,21 @@
 	<section class="py-4">
 		<div class="container">
 			<div class="pre-title">Жилой комплекс</div>
-			<div class="block-title d-flex align-items-center flex-wrap">
+			<div class="block-title d-flex align-items-center flex-wrap mt-2">
 				<h1 class="h1 mb-0 d-block">Новые Котельники</h1>
-				<a href="" target="_blank" class="outer-link ml-3 d-block">Идут продажи</a>
+				<a href="" target="_blank" class="outer-link ml-3 d-block mt-2"><span>Идут продажи</span></a>
 			</div>
-			<div class="address">г. Котельники, микрорайон «Южный», ул. Угрешская, напротив дома №6.</div>
-			<div class="address-link">
-				<i class="icon-place align-middle mr-2"></i>
+			<div class="address mt-4">г. Котельники, микрорайон «Южный», ул. Угрешская, напротив дома №6.</div>
+			<div class="address-link mt-3">
+				<i class="icon-loc align-middle mr-2"></i>
 				<a href="">Посмотреть на карте</a>
 			</div>
-			<div class="info-blocks row">
+			<div class="info-blocks row mt-5">
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="info-value d-flex">
-						<div class="icon flex-shrink-0"><img src="img/s_ga.svg" alt=""></div>
+						<div class="icon flex-shrink-0 mr-3"><img src="img/s_ga.svg" alt=""></div>
 						<div>
-							<div class="info-value__number">
+							<div class="info-value__number mb-2">
 								22,79 Га
 							</div>
 							<div class="info-value__text">
@@ -91,9 +91,9 @@
 				</div>
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="info-value d-flex">
-						<div class="icon flex-shrink-0"><img src="img/s_nl.svg" alt=""></div>
+						<div class="icon flex-shrink-0 mr-3"><img src="img/s_nl.svg" alt=""></div>
 						<div>
-							<div class="info-value__number">
+							<div class="info-value__number mb-2">
 								14 800 м<sup>2</sup>
 							</div>
 							<div class="info-value__text">
@@ -104,9 +104,9 @@
 				</div>
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="info-value d-flex">
-						<div class="icon flex-shrink-0"><img src="img/s_p.svg" alt=""></div>
+						<div class="icon flex-shrink-0 mr-3"><img src="img/s_p.svg" alt=""></div>
 						<div>
-							<div class="info-value__number">
+							<div class="info-value__number mb-2">
 								6 163 шт.
 							</div>
 							<div class="info-value__text">
@@ -117,9 +117,9 @@
 				</div>
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="info-value d-flex">
-						<div class="icon flex-shrink-0"><img src="img/s_c.svg" alt=""></div>
+						<div class="icon flex-shrink-0 mr-3"><img src="img/s_c.svg" alt=""></div>
 						<div>
-							<div class="info-value__number">
+							<div class="info-value__number mb-2">
 								6 634 шт.
 							</div>
 							<div class="info-value__text">
@@ -130,9 +130,9 @@
 				</div>
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="info-value d-flex">
-						<div class="icon flex-shrink-0"><img src="img/s_l.svg" alt=""></div>
+						<div class="icon flex-shrink-0 mr-3"><img src="img/s_l.svg" alt=""></div>
 						<div>
-							<div class="info-value__number">
+							<div class="info-value__number mb-2">
 								517 800 м<sup>2</sup>
 							</div>
 							<div class="info-value__text">
@@ -143,9 +143,9 @@
 				</div>
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="info-value d-flex">
-						<div class="icon flex-shrink-0"><img src="img/s_l.svg" alt=""></div>
+						<div class="icon flex-shrink-0 mr-3"><img src="img/s_l.svg" alt=""></div>
 						<div>
-							<div class="info-value__number">
+							<div class="info-value__number mb-2">
 								11 202 чел.
 							</div>
 							<div class="info-value__text">
@@ -155,14 +155,15 @@
 					</div>
 				</div>
 			</div>
+			<a href="#konsul" data-fancybox class="btn btn_large">Записаться на консультацию</a>
 		</div>
 	</section>
 
-	<section>
+	<section class="py-4">
 		<div class="container">
-			<ul class="nav nav-tabs project__switch d-flex" id="myTab" role="tablist">
-				<li class="nav-item"><a href="javascript:;" data-tab="1" class="">О проекте</a></li>
-				<li class="nav-item"><a href="javascript:;" data-tab="2" class="">Документы</a></li>
+			<ul class="tabs-switcher d-flex">
+				<li class="tabs-switch active"><a href="javascript:;" data-tab="1" class="">О проекте</a></li>
+				<li class="tabs-switch"><a href="javascript:;" data-tab="2" class="">Документы</a></li>
 			</ul>
 		</div>
 	</section>
@@ -170,51 +171,51 @@
 	<section class="dark-section tabs">
 		<div class="tab active" id="tab-1">
 			<div class="container-fluid d-flex">
-				<div class="row">
+				<div class="row mw100">
 					<div class="container-fluid col-12 col-lg-6">
-						<div class="about">
-							<div class="h1">О проекте</div>
-							<div class="text color-white">Строительство Квартала «Новые Котельники» предусматривает 3 очереди строительства: 14 домов переменной этажности высотой от 13 до 25 этажей, 4 детских сада общей вместимостью 630 детей, школу на 1500 мест, медицинский центр, многофункциональный административный комплекс, а также подземные и наземные паркинги.</div>
-							<table class="table-style dark-table">
-								<tr class="first-line">
+						<div class="about half-text-block ml-auto">
+							<div class="h1 color-yellow">О проекте</div>
+							<div class="text text-style color-white">
+								<p>Строительство Квартала «Новые Котельники» предусматривает 3 очереди строительства: 14 домов переменной этажности высотой от 13 до 25 этажей, 4 детских сада общей вместимостью 630 детей, школу на 1500 мест, медицинский центр, многофункциональный административный комплекс, а также подземные и наземные паркинги.</p>
+							</div>
+							<table class="table-style mt-4">
+								<tr class="d-none d-md-table-row">
 									<th>Квартиры</th>
 									<th>Площадь</th>
 									<th>Цена за квартиру</th>
 								</tr>
-								<tr>
-									<td>Студия</td>
-									<td>Площадь</td>
-									<td>26.80 — 28.00 м<sup>2</sup></td>
-									<td>Цена за квартиру</td>
-									<td>2.8 — 3.5  млн руб.</td>
+								<tr class="d-block d-md-table-row">
+									<td class="d-block d-md-table-cell">Студия</td>
+									<td class="d-block d-md-none">Площадь</td>
+									<td class="d-block d-md-table-cell">26.80 — 28.00 м<sup>2</sup></td>
+									<td class="d-block d-md-none">Цена за квартиру</td>
+									<td class="d-block d-md-table-cell">2.8 — 3.5  млн руб.</td>
 								</tr>
-								<tr>
-									<td>1-комнатные</td>
-									<td>Площадь</td>
-									<td>34.80 — 41.40 м<sup>2</sup></td>
-									<td>Цена за квартиру</td>
-									<td>3.2 — 4.4  млн руб.</td>
+								<tr class="d-block d-md-table-row">
+									<td class="d-block d-md-table-cell">1-комнатные</td>
+									<td class="d-block d-md-none">Площадь</td>
+									<td class="d-block d-md-table-cell">34.80 — 41.40 м<sup>2</sup></td>
+									<td class="d-block d-md-none">Цена за квартиру</td>
+									<td class="d-block d-md-table-cell">3.2 — 4.4  млн руб.</td>
 								</tr>
-								<tr>
-									<td>2-комнатные</td>
-									<td>Площадь</td>
-									<td>34.80 — 41.40 м<sup>2</sup></td>
-									<td>Цена за квартиру</td>
-									<td>4.2 — 6.4  млн руб.</td>
+								<tr class="d-block d-md-table-row">
+									<td class="d-block d-md-table-cell">2-комнатные</td>
+									<td class="d-block d-md-none">Площадь</td>
+									<td class="d-block d-md-table-cell">34.80 — 41.40 м<sup>2</sup></td>
+									<td class="d-block d-md-none">Цена за квартиру</td>
+									<td class="d-block d-md-table-cell">4.2 — 6.4  млн руб.</td>
 								</tr>
-								<tr>
-									<td>3-комнатные</td>
-									<td>Площадь</td>
-									<td>72.50 — 77.60 м<sup>2</sup></td>
-									<td>Цена за квартиру</td>
-									<td>5.3 — 7.8  млн руб.</td>
+								<tr class="d-block d-md-table-row">
+									<td class="d-block d-md-table-cell">3-комнатные</td>
+									<td class="d-block d-md-none">Площадь</td>
+									<td class="d-block d-md-table-cell">72.50 — 77.60 м<sup>2</sup></td>
+									<td class="d-block d-md-none">Цена за квартиру</td>
+									<td class="d-block d-md-table-cell">5.3 — 7.8  млн руб.</td>
 								</tr>
 							</table>
 						</div>
 					</div>
-					<div class=" col-12 col-lg-6 about-img">
-						<img src="img/about.jpg" alt="" class="d-block">
-					</div>
+					<div class=" col-12 col-lg-6 about-img bg-cover" style="background-image: url(img/about.jpg)"></div>
 				</div>
 			</div>
 		</div>
@@ -222,41 +223,49 @@
 	</section>
 
 
-	<section class="red-section py-5">
+	<section class="red-section video-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-6 video">
-					<a href=""><img src="img/video.jpg" alt=""></a>
-					<div class="text">Cтроительство Индустриальнго парка «Холмогоры» </div>
+				<div class="col-12 col-lg-6 video">
+					<a href="javascript:;" class="mx-auto" data-fancybox data-src="https://www.youtube.com/watch?v=C0DPdy98e4c"><img src="img/video.jpg" alt=""></a>
+					<div class="text mt-2 mx-auto">Cтроительство Индустриальнго парка «Холмогоры» </div>
 				</div>
-				<div class="col-6 area">
-					<div class="h1 color-yellow">Расположение</div>
-					<div class="text color-white">
-						<p>Квартал «Новые Котельники» строится в Подмосковье в 1,5 км от МКАД в сегменте «Комфорт +». Проект сочетает в себе все удобства городского проживания и уют тихой загородной жизни.</p>
-						<p>В жилом квартале «Новые Котельники» построят 4 детских сада на 630 мест и собственную школу на 1500 мест, так что маленькие жители смогут учиться рядом с домом.</p>
-						<p>Кроме того, жителям будет доступна инфраструктура соседних районов, где уже работают 3 школы, семь дошкольных общеобразовательных учреждений, детская школа искусств, промышленно-экономический техникум.</p>
+				<div class="col-12 col-lg-6 ">
+					<div class="area">
+						<div class="h1 color-yellow">Расположение</div>
+						<div class="text color-white">
+							<p>Квартал «Новые Котельники» строится в Подмосковье в 1,5 км от МКАД в сегменте «Комфорт +». Проект сочетает в себе все удобства городского проживания и уют тихой загородной жизни.</p>
+							<p>В жилом квартале «Новые Котельники» построят 4 детских сада на 630 мест и собственную школу на 1500 мест, так что маленькие жители смогут учиться рядом с домом.</p>
+							<p>Кроме того, жителям будет доступна инфраструктура соседних районов, где уже работают 3 школы, семь дошкольных общеобразовательных учреждений, детская школа искусств, промышленно-экономический техникум.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="gray-section py-5">
+	<section class="dark-section map-section d-none d-lg-block">
+		карта
+	</section>
+
+	<section class="gray-section places-section d-none d-lg-block">
 		<div class="container">
 			<div class="row">
-				<div class="col-6 places">
-					<div class="row">
-						<div class="col-6"><div class="img"><img src="img/palce_1.png" alt=""></div></div>
-						<div class="col-6"><div class="img"><img src="img/palce_2.png" alt=""></div></div>
-						<div class="col-6"><div class="img"><img src="img/palce_3.png" alt=""></div></div>
-						<div class="col-6"><div class="img"><img src="img/palce_4.png" alt=""></div></div>
-						<div class="col-6"><div class="img"><img src="img/palce_5.png" alt=""></div></div>
-						<div class="col-6"><div class="img"><img src="img/palce_6.png" alt=""></div></div>
+				<div class="col-12 col-lg-6">
+					<div class="places">
+						<div class="row">
+							<div class="col-6"><div class="img"><img src="img/palce_1.png" alt=""></div></div>
+							<div class="col-6"><div class="img"><img src="img/palce_2.png" alt=""></div></div>
+							<div class="col-6"><div class="img"><img src="img/palce_3.png" alt=""></div></div>
+							<div class="col-6"><div class="img"><img src="img/palce_4.png" alt=""></div></div>
+							<div class="col-6"><div class="img"><img src="img/palce_5.png" alt=""></div></div>
+							<div class="col-6"><div class="img"><img src="img/palce_6.png" alt=""></div></div>
+						</div>
 					</div>
 				</div>
-				<div class="col-6 place">
+				<div class="col-12 col-lg-6 place">
 					<div class="h1">Места поблизости</div>
-					<div class="text">
+					<div class="text text-style">
 						<p>Рядом с проектом существует разнообразная и насыщенная коммерческая и социальная инфраструктура. В городе Котельники расположены детские сады, школы, поликлиники, лицеи, спортивная школа олимпийского резерва «Союз», бассейн «Нева», экстрим-парк «Фристайл», магазины, кафе и рестораны.</p>
 						<p>В непосредственной близости от проекта располагаются крупнейшие торговые сети: «Мега Белая Дача», «Ашан», «Икея», OutletVillage Белая Дача, OBI, «Зальгросс», Castorama и другие торговые комплексы.</p>
 					</div>
@@ -264,65 +273,74 @@
 			</div>
 		</div>
 	</section>
-	<section class="red-section">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-6 image">
-					<img src="img/base.jpg" alt="">
-				</div>
-				<div class="col-6 base-info">
-					<div class="h1 color-yellow">Огромная рекреационно- спортивная база </div>
-					<div class="text color-white">
-						<p>Эксплуатация построенных объектов — как многоквартирных домов, так и коммерческих зданий, — осуществляется собственными управляющими компаниями, входящими в состав концерна.</p>
+
+	<section class="red-section base-section d-none d-lg-block">
+		<div class="container-fluid h100">
+			<div class="row mv100 h100">
+				<div class="col-12 col-lg-6 image bg-cover" style="background-image: url(img/base.jpg)"></div>
+				<div class="col-12 col-lg-6">
+					<div class="base-info">
+						<div class="h1 color-yellow mb-5">Огромная рекреационно-cпортивная база </div>
+						<div class="text text-style color-white">
+							<p>Эксплуатация построенных объектов — как многоквартирных домов, так и коммерческих зданий, — осуществляется собственными управляющими компаниями, входящими в состав концерна.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="dark-section slider-section d-none d-lg-block">
+		слайдер
+	</section>
+
 </main>
 
 
 
-<footer class="footer">
+<footer class="footer dark-section d-none d-lg-block">
 	<div class="footer-form">
 		<div class="container">
-			<div class="h1 mt-0 mb-4">Записаться на консультацию</div>
-			<div class="form">
+			<form class="form-style mx-auto">
+				<div class="h1 mt-0 mb-4 color-white">Записаться на консультацию</div>
 				<div class="row mb-1">
 					<div class="col-6">
-						<div class="input-block mb-3">
-							<input type="text" name="name" class="form-control" placeholder="Имя">
+						<div class="input-block mb-4">
+							<input type="text" name="name" class="form-control" placeholder="Имя" required>
 						</div>
-						<div class="input-block mb-3">
-							<input type="text" name="phone" class="form-control" placeholder="Телефон">
+						<div class="input-block mb-4">
+							<input type="text" name="phone" class="form-control" placeholder="Телефон" required>
 						</div>
-						<div class="input-block mb-3">
-							<input type="email" name="email" class="form-control" placeholder="Email для ответа">
+						<div class="input-block">
+							<input type="email" name="email" class="form-control" placeholder="Email для ответа" required>
 						</div>
 					</div>
 					<div class="col-6">
-						<textarea name="text"  class="form-control" placeholder="Ваши вопросы"></textarea>
+						<div class="input-block">
+							<textarea name="text"  class="form-control" placeholder="Ваши вопросы" required></textarea>
+						</div>
 					</div>
 				</div>
-				<div class="d-flex justify-content-end mb-2">
-					<div class="need">Все поля обязательны для заполнения</div>
+				<div class="d-flex justify-content-end mt-1">
+					<div class="need color-white">Все поля обязательны для заполнения</div>
 				</div>
-				<div class="row align-items-center">
-					<div class="col-auto mb-3">
+				<div class="row align-items-center mt-4">
+					<div class="col-auto">
 						<button type="submit" class="btn" name="submit">Отправить</button>
 					</div>
-					<div class="col-md-6 mb-3">
+					<div class="col-5">
 						<div class="policy">Нажимая «Отправить», я даю <a target="_blank" href="">согласие на обработку персональных данных</a></div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 	<div class="copy-line">
-		<div class="container">
-			<div class="copy">© «Русич» , 2018</div>
-			<div class="dev">Создание сайта — Individ</div>
+		<div class="container h100">
+			<div class="d-flex justify-content-between align-items-center h100">
+				<div class="copy">© «Русич» , 2018</div>
+				<div class="dev">Создание сайта — Individ</div>
+			</div>
 		</div>
 	</div>
 </footer>

@@ -14,7 +14,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -100,6 +99,9 @@ h6, .h6 {
 	}
 }
 
+p + p{
+	margin-top: 1rem;
+}
 
 
 .ul {
@@ -146,7 +148,8 @@ h6, .h6 {
 	left: 0;
 }
 
-li + li {
+.ul li + li,
+.ol li + li {
 	margin-top: .5rem;
 }
 
