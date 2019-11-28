@@ -162,8 +162,8 @@
 	<section class="py-4">
 		<div class="container">
 			<ul class="tabs-switcher d-flex">
-				<li class="tabs-switch active"><a href="javascript:;" data-tab="1" class="">О проекте</a></li>
-				<li class="tabs-switch"><a href="javascript:;" data-tab="2" class="">Документы</a></li>
+				<li class="tabs-switch active"><a href="javascript:;" data-tab="1">О проекте</a></li>
+				<li class="tabs-switch"><a href="javascript:;" data-tab="2">Документы</a></li>
 			</ul>
 		</div>
 	</section>
@@ -215,11 +215,19 @@
 							</table>
 						</div>
 					</div>
-					<div class=" col-12 col-lg-6 about-img bg-cover" style="background-image: url(img/about.jpg)"></div>
+					<div class=" col-12 col-lg-6 about-img bg-cover zoom-img" data-fancybox data-src="img/base.jpg" style="background-image: url(img/about.jpg)"></div>
 				</div>
 			</div>
 		</div>
-		<div class="tab " id="tab-2">Документы</div>
+		<div class="tab" id="tab-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 py-5">
+						<div class="h1 color-yellow">Документы</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
@@ -245,7 +253,37 @@
 	</section>
 
 	<section class="dark-section map-section d-none d-lg-block">
-		карта
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<div class="address d-flex">
+						<div class="type-icon flex-shrink-0 mr-3">
+							<img src="img/contact_k.svg" alt="">
+						</div>
+						<div class="text">
+							<div class="h3 color-white">Комплекс</div>
+							<div class="text-style mt-2 color-white">
+								<p>г. Котельники, микрорайон «Южный», ул. Угрешская, напротив дома №6.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="address d-flex">
+						<div class="type-icon flex-shrink-0 mr-3">
+							<img src="img/contact_o.svg" alt="">
+						</div>
+						<div class="text">
+							<div class="h3 color-white">Офис продаж</div>
+							<a href="tel:84958124646" class="phone mt-2">8 495 812-46-46</a>
+							<div class="text-style mt-2 color-white">
+								<p>г. Реутов, ул. Машиностроителей, д. 19/2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-9"></div>
+			</div>
+		</div>
 	</section>
 
 	<section class="gray-section places-section d-none d-lg-block">
@@ -277,7 +315,7 @@
 	<section class="red-section base-section d-none d-lg-block">
 		<div class="container-fluid h100">
 			<div class="row mv100 h100">
-				<div class="col-12 col-lg-6 image bg-cover" style="background-image: url(img/base.jpg)"></div>
+				<div class="col-12 col-lg-6 image bg-cover zoom-img"  data-fancybox data-src="img/base.jpg" style="background-image: url(img/base.jpg)"></div>
 				<div class="col-12 col-lg-6">
 					<div class="base-info">
 						<div class="h1 color-yellow mb-5">Огромная рекреационно-cпортивная база </div>

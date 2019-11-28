@@ -113,6 +113,28 @@ body {
 	background-size: cover;
 }
 
+.zoom-img{
+	position: relative;
+	cursor: pointer;
+	&::before{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.39) url("../img/zoom.svg") center center no-repeat;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition: opacity 0.3s ease;
+	}
+	&:hover{
+		&::before{
+			opacity: 1;
+		}
+	}
+}
+
 .header{
 	height: 90px;
 	.logo-block{
@@ -200,6 +222,7 @@ body {
 	align-items: center;
 	font-weight: 600;
 	font-size: 30px;
+	user-select: none;
 	li{
 		position: relative;
 		+li{
@@ -315,6 +338,7 @@ body {
 			position: relative;
 			width: 590px;
 			max-width: 100%;
+			overflow: hidden;
 			&::before{
 				width: 100%;
 				height: 100%;
@@ -325,6 +349,13 @@ body {
 				cursor: pointer;
 				left: 0;
 				top: 0;
+				transition: 0.3s ease;
+				transform: scale(1);
+			}
+			&:hover{
+				&::before{
+					transform: scale(1.1);
+				}
 			}
 		}
 		img{
@@ -343,6 +374,26 @@ body {
 	}
 }
 
+.map-section{
+	padding-top: 75px;
+	background-image: url("../img/bg_map.svg");
+	background-position: 5% bottom;
+	background-repeat: no-repeat;
+	.address{
+		+.address{
+			margin-top: 70px;
+		}
+		.phone{
+			font-weight: 500;
+			font-size: 26px;
+			color: #FFFFFF;
+			border-color: transparent;
+			&:hover{
+				border-color: $color3;
+			}
+		}
+	}
+}
 
 .places-section{
 	position: relative;
