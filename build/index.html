@@ -403,6 +403,28 @@
 	</div>
 </footer>
 
+<div class="modal-form" id="konsul">
+	<div class="h4 modal-title mb-4">Записаться на консультацию</div>
+	<form action="/" class="form-style">
+		<div class="input-block mb-4">
+			<input type="text" name="name" class="form-control" placeholder="Имя" required>
+		</div>
+		<div class="input-block mb-4">
+			<input type="email" name="email" class="form-control" placeholder="Email" required>
+		</div>
+		<div class="input-block mb-4">
+			<input type="text" name="phone" class="form-control" placeholder="Телефон" required>
+		</div>
+		<div class="input-block mb-4">
+			<textarea name="text"  class="form-control" placeholder="Сообщение..." required></textarea>
+		</div>
+		<div class="mb-2"><label class="radio"><input type="radio" name="radio" value="1"><span>Совершеннолетний</span></label></div>
+		<div class="mb-4"><label class="radio"><input type="radio" name="radio" value="2"><span>Несовершеннолетний</span></label></div>
+		<div class="mb-4"><label class="checkbox"><input type="checkbox" name="checkbox[]" value="1" required><span>Нажимая «Отправить», я даю согласие на обработку персональных данных</span></label></div>
+		<div><button type="submit" class="btn" name="submit">Отправить</button></div>
+	</form>
+</div>
+
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/main.js"></script>
 </body>

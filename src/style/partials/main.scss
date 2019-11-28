@@ -124,6 +124,127 @@ body {
 	}
 }
 
+.checkbox {
+	input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		margin: 0;
+		+ span {
+			position: relative;
+			padding: 0 0 0 28px;
+			cursor: pointer;
+			font-size: 18px;
+			font-weight: 300;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				border: 1px solid #808080;
+				background-color: #ffffff;
+				box-sizing: border-box;
+			}
+			&::after {
+				content: "";
+				display: none;
+				position: absolute;
+				left: 3px;
+				top: 5px;
+				width: 12px;
+				height: 9px;
+				box-sizing: border-box;
+				background: url("../img/check.svg") center top no-repeat;
+				background-size: 100% auto;
+			}
+		}
+		&:checked {
+			+ span{
+				&::before {
+					background-color: $color3;
+					border-color: $color3;
+				}
+				&::after {
+					display: block;
+				}
+			}
+		}
+	}
+}
+.radio{
+	input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		margin: 0;
+		+ span {
+			position: relative;
+			padding: 0 0 0 28px;
+			cursor: pointer;
+			font-size: 18px;
+			font-weight: 300;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				border: 1px solid #808080;
+				background-color: #ffffff;
+				box-sizing: border-box;
+				border-radius: 100%;
+			}
+		}
+		&:checked {
+			+ span{
+				&::before {
+					background: $color3 url("../img/radio.svg") center center no-repeat;
+					border-color: $color3;
+				}
+			}
+		}
+	}
+}
+.input-block{
+	.form-control{
+		height: 57px;
+		background: #FFFFFF;
+		border: 1px solid #BFBFBF;
+		box-sizing: border-box;
+		border-radius: 0;
+		padding: 0 18px;
+		font-size: 18px;
+		font-weight: 300;
+		width: 100%;
+		color: $font1;
+		&::placeholder{
+			color: #808080;
+			font-family: $font1;
+			font-size: 18px;
+			font-weight: 300;
+		}
+		&:hover,
+		&:focus{
+			border: 1px solid #A61744;
+		}
+	}
+	textarea.form-control{
+		height: 225px;
+		padding-top: 15px;
+		resize: none;
+	}
+
+}
+
+.modal-form{
+	display: none;
+	padding: 28px;
+	max-width: 445px;
+}
+
 .bg-cover{
 	background-size: cover;
 }
@@ -343,6 +464,8 @@ body {
 		}
 	}
 }
+
+
 
 .tabs-switcher{
 	list-style: none;
@@ -694,32 +817,6 @@ ymaps[class$='balloon__tail'] {
 	padding: 61px 0 95px;
 	form{
 		max-width: 1320px;
-		.input-block{
-			.form-control{
-				height: 57px;
-				background: #FFFFFF;
-				border: 1px solid #BFBFBF;
-				box-sizing: border-box;
-				border-radius: 0;
-				padding: 0 18px;
-				font-size: 18px;
-				font-weight: 300;
-				width: 100%;
-				color: $font1;
-				&::placeholder{
-					color: #808080;
-					font-family: $font1;
-					font-size: 18px;
-					font-weight: 300;
-				}
-			}
-			textarea.form-control{
-				height: 225px;
-				padding-top: 15px;
-				resize: none;
-			}
-
-		}
 		.need{
 			font-family: $font2;
 			font-size: 14px;
