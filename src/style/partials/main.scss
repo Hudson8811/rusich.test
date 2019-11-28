@@ -104,9 +104,14 @@ body {
 	background: linear-gradient(270.71deg, rgba(203, 35, 35, 0.74) -0.24%, rgba(170, 65, 65, 0) 98.72%), #A61744;
 	padding: 17px 37px;
 	transition: 0.3s ease;
+
 	&_large{
-		font-size: 22px;
-		padding: 25px 43px;
+		font-size: 16px;
+		padding: 16px;
+		@media (min-width: 576px){
+			font-size: 22px;
+			padding: 25px 43px;
+		}
 	}
 	&:hover{
 		background: linear-gradient(270.39deg, rgba(244, 92, 27, 0.74) -0.24%, rgba(170, 65, 65, 0) 98.72%), #BF202D;
@@ -311,12 +316,30 @@ body {
 .info-blocks{
 	max-width: 1160px;
 	.info-value{
+		.icon{
+			width: 46px;
+			@media (min-width: 992px){
+				width: auto;
+			}
+			img{
+				width: 100%;
+			}
+		}
 		.info-value__number{
-			font-size: 40px;
+			font-size: 24px;
 			line-height: 30px;
+			@media (min-width: 576px){
+				font-size: 34px;
+			}
+			@media (min-width: 992px){
+				font-size: 40px;
+			}
 		}
 		.info-value__text{
-			font-size: 18px;
+			font-size: 14px;
+			@media (min-width: 576px){
+				font-size: 18px;
+			}
 		}
 	}
 }
@@ -325,8 +348,11 @@ body {
 	list-style: none;
 	align-items: center;
 	font-weight: 600;
-	font-size: 30px;
+	font-size: 20px;
 	user-select: none;
+	@media (min-width: 576px){
+		font-size: 30px;
+	}
 	li{
 		position: relative;
 		+li{
@@ -387,6 +413,15 @@ body {
 		.about{
 			padding: 2.5rem 2.5rem 4rem ;
 		}
+		.about-img{
+			height: 259px;
+			@media (min-width: 576px){
+				height: 623px;
+			}
+			@media (min-width: 992px){
+				height: auto;
+			}
+		}
 	}
 }
 
@@ -394,36 +429,48 @@ body {
 	border-collapse: collapse;
 	width: 100%;
 	tr{
+		border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+		padding: 15px 0 20px;
 		th{
 			font-weight: 600;
 			font-size: 17px;
 			color: #FFFFFF;
 			padding: 14px 0;
-			border-bottom: 1px solid rgba(196, 196, 196, 0.5);
 			text-align: left;
+			border-bottom: 1px solid rgba(196, 196, 196, 0.5);
 		}
 		td{
 			font-size: 20px;
 			color: #FFFFFF;
-			padding: 14px 0;
-			border-bottom: 1px solid rgba(196, 196, 196, 0.5);
 			text-align: left;
+			@media (min-width: 768px){
+				padding: 14px 0;
+				border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+				+td{
+					padding-left: 10px;
+				}
+			}
 			&:first-child{
 				font-weight: 600;
 				font-size: 22px;
 			}
-			+td{
-				padding-left: 10px;
+			&.d-md-none{
+				font-family: $font2;
+				font-size: 14px;
+				margin-top: 14px;
 			}
 		}
 	}
 }
 
 .video-section{
-	padding: 4rem 0 4.5rem;
+	padding: 3rem 0 3.5rem;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
+	@media (min-width: 992px){
+		padding: 4rem 0 4.5rem;
+	}
 	&::after{
 		content: "";
 		width: 121px;
@@ -474,7 +521,9 @@ body {
 		}
 	}
 	.area{
-		max-width: 640px;
+		@media (min-width: 992px){
+			max-width: 640px;
+		}
 	}
 }
 
